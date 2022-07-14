@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft_red: hsl(14, 88%, 65%);
+    --text_very_dark_grayish_blue: hsl(237, 12%, 33%);
+    --text_dark_grayish_blue: hsl(240, 6%, 50%);
+    --divider_grayiush_blue: hsl(240, 5%, 91%);
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    width: 100vw;
+}
+
+.main_component {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main {
+    background: url(./images/bg-pattern-desktop.svg);
+    background-position: left;
+    background-size: 65vh;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 990px;
+    height: 70vh;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+
+.faqs_cards_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 60px;
+
+    /* padding-right: 60px; */
+}
+
+.faqs_cards_wrapper h1 {
+    font-size: 33px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.faqs_card {
+    width: 340px;
+}
+
+
+.divider {
+    padding-top: 16px;
+    border-bottom: solid 1.4px var(--divider_grayiush_blue);
+}
+
+.before {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.accordion {
+    display: none;
+    align-items: center;
+    padding-top: 12px;
+
+}
+
+.ques {
+    color: var(--text_dark_grayish_blue);
+    font-size: 14px;
+    font-weight: 200;
+
+}
+
+
+.ques:hover {
+    color: var(--soft_red);
+    cursor: pointer;
+}
+
+.answ {
+
+    color: var(--text_dark_grayish_blue);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* svgs */
+
+.svgs {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.box_svg {
+    position: absolute;
+    left: -140px;
+    top: 260px;
+}
+
+.lady_svg {
+    position: relative;
+    z-index: -10;
+    left: -90px;
+
+}
+
+.chevron-down {
+    cursor: pointer;
+}
+
+.attribution a {
+    /* text-decoration: none; */
+   color: black;
+    
+}
+
+.attribution {
+    padding-top: 30px;
+    font-size: 17px;
+    color: white;
+}
